@@ -1,0 +1,71 @@
+---
+title: Bring Your Dreams to Life
+description: Unlocking the Power of New Web Development and Futured Digital Marketing!
+template: splash
+hero:
+    tagline: Feel the Power of Futured Web Development and Modern Digital Marketing... ❤
+    image:
+        file: ../../assets/trancperent.png
+    actions:
+        - text: How to Get Starter?
+          link: /about
+          icon: right-arrow
+          variant: primary
+        - text: Start Immediately!
+          link: https://github.com/Frikadellios
+          icon: external
+          variant: primary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import CardMouseMoveScript from '../../components/motion/CardMouseMoveScript';
+
+<CardGrid stagger>
+    <Card title="Astro" icon="astro">
+        Check `https://astro.build` - The web framework for content-driven powers and the world's fastest websites, client-side web apps, dynamic API endpoints, and everything in-between..
+    </Card>
+    <Card title="Starlight" icon="starlight">
+         Full-featured documentation theme built on top of the Astro framework. This guide will help you get started with a new project. See the manual setup instructions to add Starlight to an existing Astro project.
+    </Card>
+    <Card title="Bun in runtime!" icon="bun">
+        Bun is designed as a drop-in replacement for Node.js. It natively implements hundreds of Node.js and Web APIs, including fs, path, Buffer and more.
+    </Card>
+    <Card title="GitHub" icon="seti:github">
+        Find it code repo here in [GitHub](https://github.com/Frikadellios/shadylight/).
+    </Card>
+</CardGrid>
+
+<CardMouseMoveScript client:load />
+
+
+<Card title="Technologies? - Check this out... ❤">
+Tailwind CSS & Shadcn UI - That's not all...
+</Card>
+
+<CardGrid>
+  <Card title="Bun - is a fast JavaScript" icon="bun">
+  Develop, test, run, and bundle JavaScript & TypeScript projects—all with Bun. Bun is an all-in-one JavaScript runtime & toolkit designed for speed, complete with a bundler, test runner, and Node.js-compatible package manager.
+  </Card>
+  <Card title="Yarn - Safe and stable!" icon="seti:yarn">
+  Yarn is a package manager that doubles down as project manager. Whether you work on simple projects or industry monorepos, whether you're an open source developer or an enterprise user, Yarn has your back and has 100% compatible build with Bun.sh.
+  </Card>
+    <Card title="MDX" icon="mdx">
+    Markdown for the component era! - MDX lets you use JSX in your markdown content. You can import components, such as interactive charts or alerts, and embed them within your content. This makes writing long-form content with components a blast. 🚀
+  </Card>
+
+  <Card title="Markdown" icon="seti:markdown">
+  Use free and open-source reference guide that explains how to use Markdown, the simple and easy-to-use markup language you can use to format virtually any document.
+  </Card>
+   <Card title="React" icon="seti:react">
+   The library for web and native user interfaces - React lets you build user interfaces out of individual pieces called components. Create your own React components like Thumbnail, LikeButton, and Video. Then combine them into entire screens, pages, and apps.
+  </Card>
+  <Card title="Svelte" icon="seti:svelte">
+   Svelte with Shadcn Themes include - Built-in scoped styling, state management, motion primitives, form bindings and more — don't waste time trawling npm for the bare essentials. It's all here.
+  </Card>
+    <Card title="Biomejs" icon="biome">
+    One toolchain for your web project! Format, lint, and more in a fraction of a second. Biome is a fast formatter for JavaScript, TypeScript, JSX, and JSON that scores 97% compatibility with Prettier, saving CI and developer time. Biome can even format malformed code as you write it in your favorite editor.
+  </Card>
+   <Card title="Git" icon="seti:git">
+   Git service is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+  </Card>
+</CardGrid>

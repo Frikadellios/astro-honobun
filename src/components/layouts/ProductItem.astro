@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets'
+import HoverLink from './HoverLink.astro'
+
+export interface Props {
+  title: string
+  description: string
+  href: string
+  src: string
+}
+
+const { title, description, href, src } = Astro.props
+---
+
+<HoverLink link={href}>
+    <Image
+        src={src}
+        width={140}
+        height={70}
+        alt={title}
+        class="flex-shrink-0 rounded-md shadow-2xl"
+      />
+      <div>
+        <h4 class="text-xl font-bold mb-1 text-foreground">
+          {title}
+        </h4>
+        <p class="text-foreground text-sm max-w-[10rem]">
+          {description}
+        </p>
+      </div>
+    </HoverLink>

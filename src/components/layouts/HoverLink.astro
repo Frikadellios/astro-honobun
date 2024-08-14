@@ -1,0 +1,15 @@
+---
+
+export interface Props {
+  link: string
+  children?: React.ReactNode // Add this line to include children in the props
+}
+
+const { link, children } = Astro.props
+---
+
+<a class="flex space-x-2 text-foreground hover:text-accent" href={link} >
+    {children}
+ </a>
+  
+  
